@@ -8,13 +8,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  private unusedValue = 42;
-
-  // Changed title so tests expecting 'github-actions-test' will fail
-  title = 'github-actions-broken';
+  title = 'github-actions-test';
 
   constructor() {
-    // console.log triggers ESLint no-console rule (if enabled)
     console.log('AppComponent constructed');
   }
 }
