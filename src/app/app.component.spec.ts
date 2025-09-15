@@ -17,6 +17,7 @@ describe('AppComponent', () => {
   it(`should have the 'github-actions-test' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
+    // This will fail because title is 'github-actions-broken'
     expect(app.title).toEqual('github-actions-test');
   });
 
@@ -24,6 +25,9 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, github-actions-test');
+    // This will fail because the template does not contain the expected <h1> text
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, github-actions-test'
+    );
   });
 });
