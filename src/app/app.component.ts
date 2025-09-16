@@ -10,5 +10,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'github-actions-test-error';
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('AppComponent initialized');
+  }
 }
