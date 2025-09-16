@@ -8,7 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-  title = 'github-actions-test-error';
+  title = 'github-actions-test';
 
   ngOnInit(): void {
     console.log('AppComponent initialized');
